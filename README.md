@@ -9,7 +9,6 @@
 ### hnu spring web script programming project
 
 웹 스크립트 프로그래밍 수업 프론트엔드 프로젝트 <br> 백엔드는 추후에 개발할 예정 입니다 
-<div > 이상형 월드컵 </div>
 
 ## Collaborator
 <table>
