@@ -5,6 +5,17 @@
     <title>이상형 월드컵</title>
 </head>
 <body>
-    
+    <script>
+        var date = new Date();
+        var hours = date.getHours();
+
+        if (hours < 12) {
+            alert('오전');
+        }
+
+        if (12 <= hours) {
+            alert('오후');
+        }
+    </script>
 </body>
 </html>
