@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+h1,h2,h3,h4,h5,h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+h1 {
+    font-weight: 800;
+}
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header {
+    margin: 100px auto 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgrey;
+}
+.top-post {
+    display: flex;
+    width: 100%;
+}
+.top-post > img {
+    margin: 20px 0;
+    border: 1px solid grey;
+}
+.top-post > div {
+    margin: 10px 20px;
+    width: 50%;
+}
+.all-posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.post {
+    width: 31%;
+}
+.post > img {
+    width: 100%;
+    height: 100px;
+    border: 1px solid grey;
+}
+.top-post > div {
+    margin: 30px 10px;
+}
+.top-post > div > * {
+    margin: 10px 15px;
+}
+.post > div > * {
+    margin: 10px 0px;
+}
