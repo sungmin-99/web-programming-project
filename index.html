@@ -1,105 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>이상형 월드컵</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>jinuk-</title>
   <style>
-    * {
-        margin: 0;
-        font-family: 'Merriweather', serif;
-    }
-    h1,h2,h3,h4,h5,h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-    }
-    h1 {
-        font-weight: 800;
-        font-family:'휴먼매직체'
-    }
-    #container {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-    .header {
-        margin: 100px auto 0;
-        padding-bottom: 50px;
-        border-bottom: 1px solid lightgrey;
-    }
-    .top-post {
-        display: flex;
-        width: 100%;
-    }
-    .top-post > img {
-        margin: 20px 0;
-        border: 1px solid grey;
-    }
-    .top-post > div {
-        margin: 10px 20px;
-        width: 50%;
-    }
-    .all-posts {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .post {
-        width: 31%;
-    }
-    .post > img {
-        width: 100%;
-        height: 100px;
-        border: 1px solid grey;
-    }
-    .top-post > div {
-        margin: 30px 10px;
-    }
-    .top-post > div > * {
-        margin: 10px 15px;
-    }
-    .post > div > * {
-        margin: 10px 0px;
-    }
-  </style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid silver;
+}
+
+img{
+  width: 100px;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  color: #999;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+}
+
+h1 {
+font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+h2 {
+font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #222;
+}
+
+h3 {
+font-size: 1rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: #222;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  margin-bottom:25px;
+}
+
+p{
+  margin-bottom: 20px;
+}
+
+small{
+  line-height: 2rem;
+}
+
+a:link { color: #666; text-decoration: none;}
+a:visited { color: #666; }
+a:hover { color: black; }
+a:active { color: red; }
+
+button{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+button:hover{
+  color: white;
+  background: #666;
+}
+
+/*start*/
+main{
+  height: 600px;
+  background: url('https://images.unsplash.com/photo-1551411444-d4d4b91e729e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+background-size: cover;
+  position: relative;
+}
+
+main div{
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 왼쪽으로 50% 위로50% */
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+}
+
+main div h1, main div h4,main div h5{
+  color: white;
+}
+
+header{
+  width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid silver;
+}
+
+/*에프터는 묶어주는 역할*/
+header:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/*퍼스트차일드에 그냥 div써도됨*/
+header > :first-child{
+  float: left;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+header nav{
+  float:right;
+}
+
+header nav ul li{
+  list-style: none;
+  display: inline;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+article{
+  padding: 50px 0;
+  clear: both;
+  text-align: center;
+}
+
+article > div{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+article section{
+  width: 310px;
+  float: left;
+}
+
+article img{
+  width: 310px;
+  height: 200px;
+}
+
+footer{
+  background: #F6F7F7;
+  padding: 40px 0;
+}
+
+/*시맨틱 태그에는 :를 사용할때 안되면 한칸 띄어서 해보기*/
+footer :after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+footer > div{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer > div :first-child{
+  float: right;
+}
+
+footer img{
+  width: 40px;
+  margin-left: 10px;
+}
+
+/*라인하이트 사용해서 중간으로 배치*/
+footer > div :last-child{
+  line-height: 2.6rem;
+  float: left;
+}
+
+</style>
 </head>
 <body>
-  <div id="container">
-      <div class="header">
-          <h1>이상형 월드컵</h1>
-          <div class="bio">
-              <img>
-              <p>Web script programming <strong>team 4</strong> Ideal World Cup.</p>
-          </div>
+
+  <main>
+    <div>
+      <h4>Where can I get some?</h4>
+      <h1>Randomised words which</h1>
+      <h5>Don't look even slightly believable. If you are going to use a passage</h5>
+      <button>Read more</button>
+    </div>
+  </main>
+
+   <header>
+    <div>
+      <a href="#">Travel</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">notice</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">reservations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+  <div>
+    <section>
+      <img src="https://images.unsplash.com/photo-1577547476482-63dc54e36e26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+            <h3>island</h3>
+            <small>2020/06/18 ~ 06/30</small>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <button>Read more</button>
+    </section>
+        <section>
+          <img src="https://images.unsplash.com/photo-1577547476185-3227692b70b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80">
+            <h3>sea</h3>
+            <small>2020/06/18 ~ 06/30</small>
+      <p>In blandit ultrices leo. In ut ante tortor. Pellentesque laoreet nunc felis, nec porta lectus cursus maximus. Ut nec risus vel velit suscipit mattis in tempus justo. Mauris dui urna, iaculis at bibendum vel, malesuada sed massa. Suspendisse id augue velit. Maecenas suscipit lacus justo, a lacinia dui suscipit et.</p><pre>
+       </pre>
+      <button>Read more</button>
+    </section>
+        <section>
+          <img src="https://images.unsplash.com/photo-1586184059194-4b048581e50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80">
+            <h3>island view</h3>
+            <small>2020/06/18 ~ 06/30</small>
+      <p>Vestibulum massa sapien, sodales nec eros quis, ullamcorper feugiat tellus. Mauris placerat hendrerit euismod. Sed eget magna purus. In rutrum sed sem non faucibus. Nunc vel mollis elit. Praesent consequat nibh tempor nulla vestibulum luctus. Aenean sit amet est quis ante porttitor tempor. Vestibulum bibendum sodales laoreet. Sed varius erat eu magna dapibus sagittis.  </p>
+      <button>Read more</button>
+    </section>
+  </article>
+
+     <footer>
+<div>
+        <div>
+            <a href="#" alt="facebook"><img src="http://www.myiconfinder.com/uploads/iconsets/48-48-005d32df4586811e01333ee881146c40.png"></a>
+            <a href="#" alt="twitter"><img src="http://www.myiconfinder.com/uploads/iconsets/48-48-624dc72b6deef6abddf29031c1ac7224.png"></a>
+        </div>
+        <div>
+            Copyright © Shiftbrain
+        </div>
       </div>
-      <div class="top-post">
-          <img src= alt="Freemote image" style="height: 300px; width: 100%;">
-          <div>
-              <h2>How to make your web design unique</h2>
-              <h5>What makes visual content unique & how to create it without breaking the rules</h5>
-          </div>
-      </div>
-      <div class="all-posts">
-          <div class="post">
-              <img src= style="height: 200px; width: 100%;">
-              <div>
-                  <h3>Landing for Business</h3>
-                  <h5>When does your business need a landing page?</h5>
-              </div>
-          </div>
-          <div class="post">
-              <img src= style="height: 200px; width: 100%;">
-              <div>
-                  <h3>Dashboard Design</h3>
-                  <h5>Anatomy of an effective dashboard</h5>
-              </div>
-          </div>
-          <div class="post">
-              <img src= style="height: 200px; width: 100%;">
-              <div>
-                  <h3>UI Secrets They Don't Want You To Know</h3>
-                  <h5>Secrets uncovered after years in the industry</h5>
-              </div>
-          </div>
-      </div>
-  </div>
+    </footer>
 </body>
 </html>
