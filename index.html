@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-  <title>jinuk-</title>
+  <title>TOPRANKING</title>
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 * {
   margin: 0;
@@ -90,7 +90,7 @@ button:hover{
 /*start*/
 main{
   height: 600px;
-  background: url('https://images.unsplash.com/photo-1551411444-d4d4b91e729e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  background: url('https://images.unsplash.com/photo-1584291527908-033f4d6542c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80') no-repeat;
 background-size: cover;
   position: relative;
 }
@@ -101,7 +101,6 @@ main div{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* 왼쪽으로 50% 위로50% */
   line-height: 3rem;
   text-align: center;
   color: white;
@@ -117,14 +116,12 @@ header{
   border-bottom: 1px solid silver;
 }
 
-/*에프터는 묶어주는 역할*/
 header:after{
   content:"";
   display:block;
   clear:both;
 }
 
-/*퍼스트차일드에 그냥 div써도됨*/
 header > :first-child{
   float: left;
   font-size: 1.6rem;
@@ -174,7 +171,6 @@ footer{
   padding: 40px 0;
 }
 
-/*시맨틱 태그에는 :를 사용할때 안되면 한칸 띄어서 해보기*/
 footer :after{
   content:"";
   display:block;
@@ -195,7 +191,6 @@ footer img{
   margin-left: 10px;
 }
 
-/*라인하이트 사용해서 중간으로 배치*/
 footer > div :last-child{
   line-height: 2.6rem;
   float: left;
@@ -204,26 +199,24 @@ footer > div :last-child{
 </style>
 </head>
 <body>
-
   <main>
     <div>
       <h4>Where can I get some?</h4>
-      <h1>Randomised words which</h1>
+      <h1>TOP RANK</h1>
       <h5>Don't look even slightly believable. If you are going to use a passage</h5>
-      <button>Read more</button>
+      <a href = 'https://github.com/sungmin-99/web-programming-project/'><button>Read more</button></a>
     </div>
   </main>
 
    <header>
     <div>
-      <a href="#">Travel</a>
+      <a href="#">RANKING</a>
     </div>
     <nav>
       <ul>
         <li><a href="#">About</a></li>
-        <li><a href="#">notice</a></li>
+        <li><a href="#">Category</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">reservations</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -232,23 +225,23 @@ footer > div :last-child{
   <article>
   <div>
     <section>
-      <img src="https://images.unsplash.com/photo-1577547476482-63dc54e36e26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-            <h3>island</h3>
-            <small>2020/06/18 ~ 06/30</small>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      <button>Read more</button>
+      <img src="img/language.png">
+            <h3>PROGRAMMING LANGUAGE</h3>
+            <small>~year 2020</small>
+      <p>코딩을 배우고 싶어하는 사람들은 언제나 어떤 언어를 배울까 고민합니다. TIOBE에서 Google, Bing, Yahoo!, Wikipedia, Amazon, Youtube등 세계적으로 유명한 검색엔진은 기반으로 통계한 프로그래밍 언어의 순위를 확인해 보세요!</p>
+      <a href='Langauge Ranking/programming language.html'><button>Read more</button></a>
     </section>
         <section>
-          <img src="https://images.unsplash.com/photo-1577547476185-3227692b70b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80">
-            <h3>sea</h3>
+          <img src="https://images.unsplash.com/photo-1580234831315-438a4813685c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80">
+            <h3>Game</h3>
             <small>2020/06/18 ~ 06/30</small>
       <p>In blandit ultrices leo. In ut ante tortor. Pellentesque laoreet nunc felis, nec porta lectus cursus maximus. Ut nec risus vel velit suscipit mattis in tempus justo. Mauris dui urna, iaculis at bibendum vel, malesuada sed massa. Suspendisse id augue velit. Maecenas suscipit lacus justo, a lacinia dui suscipit et.</p><pre>
        </pre>
       <button>Read more</button>
     </section>
         <section>
-          <img src="https://images.unsplash.com/photo-1586184059194-4b048581e50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80">
-            <h3>island view</h3>
+          <img src="https://images.unsplash.com/photo-1611328572996-632a8900d0d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+            <h3>Youtube</h3>
             <small>2020/06/18 ~ 06/30</small>
       <p>Vestibulum massa sapien, sodales nec eros quis, ullamcorper feugiat tellus. Mauris placerat hendrerit euismod. Sed eget magna purus. In rutrum sed sem non faucibus. Nunc vel mollis elit. Praesent consequat nibh tempor nulla vestibulum luctus. Aenean sit amet est quis ante porttitor tempor. Vestibulum bibendum sodales laoreet. Sed varius erat eu magna dapibus sagittis.  </p>
       <button>Read more</button>
@@ -262,7 +255,7 @@ footer > div :last-child{
             <a href="#" alt="twitter"><img src="http://www.myiconfinder.com/uploads/iconsets/48-48-624dc72b6deef6abddf29031c1ac7224.png"></a>
         </div>
         <div>
-            Copyright © Shiftbrain
+            Hannam university
         </div>
       </div>
     </footer>
