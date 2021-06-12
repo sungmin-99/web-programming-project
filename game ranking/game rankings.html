@@ -47,7 +47,7 @@
 
     td, th {
         padding: 1em 1.5em;
-        text-align: left;
+        text-align: center;
     }
 
     tbody th {
@@ -66,9 +66,12 @@
     }
     .date {
         float:left;
-        margin-left: 100px;
-        margin-bottom: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
        }
+    .search{
+        float: right;
+    }
     </style>
 </head>
 <body>
@@ -77,151 +80,141 @@
     <h1>Weekly Game Ranking</h1>
         </header>
 
-        <div class="date"> 
-            <table width="100%" border="0" cellpadding="0" cellspacing="3">
-                <tbody>
-                    <tr>
-                    <td><img src="#"></td>
-                    <td align="left"><input name="txt_startdate" type="text" value="2021-06-07" id="txt_startdate" class="input4" style="width:100px;"></td>
-                    <td align="center"><input type="image" name="CalBtn1" id="CalBtn1" src="#" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;CalBtn1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="border-width:0px;"></td>
-                    <td><input name="txt_enddate" type="text" value="2021-06-07" id="txt_enddate" class="input4" style="width:100px;"></td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-
-        </div>
-
 
         <div class="wrapper">
+            <div class="date"> 
+                <input type="month" name="month">
+                ~
+                <input type="month" name="month">
+            </div>
+            <div class="search"> <input type="text"></div>
             <table>
                 <thead>
                     <tr>
                         <th>Rank</th>
-                        <th>name</th>
-                        <th>pc room rate</th>
-                        <th>change</th>
+                        <th>Name</th>
+                        <th>PC Room Rate</th>
+                        <th>Change</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="rank">1</td>
-                        <td class="Language">league of legend</td>
-                        <td class="Rating">16.21%</td>
-                        <td class="Change">+1</td>
+                        <td class="Language">League Of Legend</td>
+                        <td class="Rating">47.81 %</td>
+                        <td class="Change">+3</td>
                     </tr>
                     <tr>
                         <td class="rank">2</td>
-                        <td class="Language">sudden attack</td>
-                        <td class="Rating">12.12%</td>
+                        <td class="Language">Sudden Attack</td>
+                        <td class="Rating">8.80 %</td>
                         <td class="Change">+1</td>
                     </tr>
                         <tr>
                         <td class="rank">3</td>
-                        <td class="Language">battle ground</td>
-                        <td class="Rating">11.68%</td>
+                        <td class="Language">Battle Ground</td>
+                        <td class="Rating">8.08 %</td>
                         <td class="Change">-1</td>
                     </tr>
                     <tr>
                         <td class="rank">4</td>
-                        <td class="Language">fifa online 4</td>
-                        <td class="Rating">7.60%</td>
+                        <td class="Language">FIFA Online 4</td>
+                        <td class="Rating">4.70 %</td>
                         <td class="Change">0</td>
                     </tr>
                     <tr>
                         <td class="rank">5</td>
-                        <td class="Language">over watch</td>
-                        <td class="Rating">4.67%</td>
+                        <td class="Language">Over Watch</td>
+                        <td class="Rating">4.61 %</td>
                         <td class="Change">0</td>
                     </tr>
                     <tr>
                         <td class="rank">6</td>
-                        <td class="Language">rost ark</td>
-                        <td class="Rating">4.01%</td>
+                        <td class="Language">LOSTARK</td>
+                        <td class="Rating">3.19 %</td>
                         <td class="Change">0</td>
                     </tr>
                     <tr>
                         <td class="rank">7</td>
-                        <td class="Language">starcraft</td>
-                        <td class="Rating">2.03%</td>
+                        <td class="Language">StarCraft</td>
+                        <td class="Rating">2.88 %</td>
                         <td class="Change">0</td>
                     </tr>
                     <tr>
                         <td class="rank">8</td>
-                        <td class="Language">aion</td>
-                        <td class="Rating">1.79%</td>
+                        <td class="Language">AION</td>
+                        <td class="Rating">2.37 %</td>
                         <td class="Change">0</td>
                     </tr>
                     <tr>
                         <td class="rank">9</td>
-                        <td class="Language">maple story</td>
-                        <td class="Rating">1.64%</td>
-                        <td class="Change">+7</td>
+                        <td class="Language">Maple Story</td>
+                        <td class="Rating">1.63 %</td>
+                        <td class="Change">-10</td>
                     </tr>
                     <tr>
                         <td class="rank">10</td>
-                        <td class="Language">d f</td>
-                        <td class="Rating">1.54%</td>
+                        <td class="Language">Dungeon & Fighter</td>
+                        <td class="Rating">1.29 %</td>
                         <td class="Change">-1</td>
                     </tr>
                     <tr>
                         <td class="rank">11</td>
-                        <td class="Language">Groovy</td>
-                        <td class="Rating">1.51%</td>
+                        <td class="Language">KART RIDER</td>
+                        <td class="Rating">1.11%</td>
                         <td class="Change">+3</td>
                     </tr>
                     <tr>
                         <td class="rank">12</td>
-                        <td class="Language">Perl</td>
-                        <td class="Rating">1.51%</td>
+                        <td class="Language">MINECRAFT</td>
+                        <td class="Rating">1.01%</td>
                         <td class="Change">+9</td>
                     </tr>
                     <tr>
                         <td class="rank">13</td>
-                        <td class="Language">Go</td>
-                        <td class="Rating">1.36%</td>
+                        <td class="Language">LINEAGE</td>
+                        <td class="Rating">1.00%</td>
                         <td class="Change">+7</td>
                     </tr>
                     <tr>
                         <td class="rank">14</td>
-                        <td class="Language">Swift</td>
-                        <td class="Rating">1.35%</td>
+                        <td class="Language">COOKIE RUN</td>
+                        <td class="Rating">0.95%</td>
                         <td class="Change">-4</td>
                     </tr>
                     <tr>
                         <td class="rank">15</td>
-                        <td class="Language">Ruby</td>
-                        <td class="Rating">1.22%</td>
+                        <td class="Language">AMONG US</td>
+                        <td class="Rating">0.92%</td>
                         <td class="Change">-4</td>
                     </tr>
                     <tr>
                         <td class="rank">16</td>
-                        <td class="Language">Assembly Language</td>
-                        <td class="Rating">1.17%</td>
+                        <td class="Language">Crazy Arcade</td>
+                        <td class="Rating">0.87%</td>
                         <td class="Change">-1</td>
                     </tr>
                     <tr>
                         <td class="rank">17</td>
-                        <td class="Language">MATLAB</td>
-                        <td class="Rating">1.10%</td>
+                        <td class="Language">Getamped</td>
+                        <td class="Rating">0.86%</td>
                         <td class="Change">+1</td>
                     </tr>
                     <tr>
                         <td class="rank">18</td>
-                        <td class="Language">Delphi/Object Pascal</td>
-                        <td class="Rating">0.86%</td>
+                        <td class="Language">Dioblo3</td>
+                        <td class="Rating">0.85%</td>
                         <td class="Change">-5</td>
                     </tr>
                     <tr>
                         <td class="rank">19</td>
-                        <td class="Language">Objective-C</td>
+                        <td class="Language">ELSWORD</td>
                         <td class="Rating">0.84%</td>
                         <td class="Change">-7</td>
                     </tr>
                     <tr>
                         <td class="rank">20</td>
-                        <td class="Language">Transact_SQL</td>
+                        <td class="Language">Pokémon GO</td>
                         <td class="Rating">0.82%</td>
                         <td class="Change">+12</td>
                     </tr>
