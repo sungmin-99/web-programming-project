@@ -18,109 +18,175 @@
         padding: 0;
         margin: 0;
     }
-
-    li {
-        list-style-type: none;
-    }
-    .clear {
-        clear: both;
-    }
     #page {
-       
-        margin: 50px;
-        
+        line-height: 1.5em;
+        margin: 0 auto;
+        padding: 2em 0 3em;
+        width: 90%;
+        max-width: 2000px;
+        overflow: hidden;
     }
     header {
-        
         height: 70px;
         margin-top: 10px;
-        border-bottom: solid 1px black; 
-        
-        
+        border-bottom: solid 2px black; 
     }
-    #logo {
+    .logo {
         text-align: center;
     }
-    #text{
+    .text{
         font-size: 50px;
+        text-shadow: 5px 5px 10px aquamarine;
     }
-    nav {
+    #home{
+        float: right;
+    }
+    #color{
+        color: black;
         
-        height: 50px;
-        margin-top: 10px;
-        
-        
-        background-color: white;
     }
-    nav li {
-        float: left;
+    #text2{
+        font-size: 25px;
+        text-shadow: 5px 5px 10px aquamarine;
+        font-weight: bold;
     }
-    section {
-        width: 70%;
-        height: 50px;
-        float: left;
-        margin-top: 10px;
-        
-        background-color: white;
+    li{
+        display: inline;    
     }
-    aside {
-        width: 28%;
-        height: 50px;
-        float: left;
-        margin-left: 2%;
-        margin-top: 10px;
-        
-        background-color: white;
+    .li{
+        padding-left: 10%;
     }
-    footer {
-        height: 50px;
-        border-top: solid 1px #cccccc;
-        margin-top: 10px;
-        
-        background-color: white;
+    nav {   
+        height: 40px;
+        margin-top: 10px;   
+        border-bottom: solid 2px black;
     }
-    #address {
-        float: left;
-        margin: 30px 0 0 50px;
+    #section {
+       margin-top: 10px;
+       background-color: white;
+
     }
-    #customer {
-        float: left;
-        margin: 20px 0 0 180px;
+    #table{
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .back{
+        background-color: gray;
+    }
+    td, th {
+        padding: 1em 1.5em;
+        text-align: center;
     }
     </style>
+
 </head>
+
 <body>
     
 <div id='page'>
 	<header>
-		<div id='logo'>
-			<h4 id='text'>기업 선호도 순위</h4>
+		<div class='logo'>
+			<h4 class='text'>기업 선호도 순위</h4>
+            <h5 id='home'><a id='color' href='../index.html'>Home</a></h5>
         </div>
-
 	</header>
-	<div class='clear'></div> 
+	
 	<nav>
-        년도 or 카테고리
+        <div class='logo'>
+            <ul id='text2'>
+                <li>종합</li>
+                <li class='li'>공기업</li>
+                <li class='li'></li>IT</li>              
+                <li class='li'></li>게임</li>
+                <li class='li'></li>외국계</li>
+            </ul>
+        </div>
 	</nav>
-	<div class='clear'></div> 
-	<section>
-			순위
-	</section>
-	<aside>
-		<ul>
-			채용정보
-		</ul>
-	</aside>
-	<div class='clear'></div> 
-	<footer>
-		<div id='address'>
-			고민
-		</div>
-		<div id='customer'>
-			
-		</div>
-	</footer>
-	<div class='clear'></div>
+	 
+	<div id='section'>
+        <table id='table'>
+            <tr>
+                <th>순위</th>
+                <th>기업명</th>
+                <th>사원수</th>
+                <th>평균연봉</th>
+                <th>채용정보</th>
+            </tr>
+            <tr class='back'>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class='back'>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class='back'>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class='back'>
+                <td>7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class='back'>
+                <td>9</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+	</div>
+
 </div>
    
 </body>
