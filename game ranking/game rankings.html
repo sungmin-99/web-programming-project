@@ -1,226 +1,303 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Rankings</title>
-    <style>
-    body {
-        font-family: 'Lato', Arial, sans-serif;
-        color: #989c9b;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>PROGRAMMER ASSISTANT</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
-    .container > header {
-        margin: 0 auto;
-        padding: 1em;
-        text-align: center;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid silver;
+}
 
-    .container > header h1 {
-    font-weight: 600;
-        font-size: 3em;
-        margin: 0;
-    }
+body{
+  font-family: Verdana;
+  font-size: 13px;
+  color:black;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
 
-    .wrapper {
-        line-height: 1.5em;
-        margin: 0 auto;
-        padding: 2em 0 3em;
-        width: 90%;
-        max-width: 2000px;
-        overflow: hidden;
-    }
+ 
+}
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        background: #fff;
-    }
+h1 {
+font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
 
-    th {
-        background-color: #326295;
-        font-weight: bold;
-        color: #fff;
-        white-space: nowrap;
-    }
+h2 {
+font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #222;
+}
 
-    td, th {
-        padding: 1em 1.5em;
-        text-align: center;
-    }
+h3 {
+font-size: 1rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: #222;
+}
 
-    tbody th {
-        background-color: #2ea879;
-    }
-    tbody tr:nth-child(2n-1) {
-        background-color: #f5f5f5;
-        transition: all .125s ease-in-out;
-    }
-    tbody tr:hover {
-        background-color: rgba(50,98,149,.3);
-    }
+h4 {
+  font-family: 'Playfair Display', serif;
+font-size: 1.1rem;
+  line-height: 1.4rem;
+}
 
-    .rank {
-        text-transform: capitalize;
-    }
-    .date {
-        float:left;
-        margin-left: 10px;
-        margin-bottom: 10px;
-       }
-    .search{
-        float: right;
-    }
-    </style>
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  margin-bottom:25px;
+}
+
+p{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; }
+a:hover { color: black; }
+a:active { color: red; }
+
+
+
+ div h1, main div h4,main div h5{
+  color: black;
+}
+
+main {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  
+}
+
+main div {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 3rem;
+  text-align: center;
+}
+header{
+  width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid silver;
+  text-shadow: 5px 5px gainsboro;
+
+}
+
+header:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+header > :first-child{
+  float: left;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+header nav{
+  float:right;
+}
+
+header nav ul li{
+  list-style: none;
+  display: inline;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+article{
+  padding: 50px 0 0 0;
+  clear: both;
+  text-align: center;
+  
+}
+
+article > div{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article section{
+  width: 310px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.one {
+  width: 310px;
+  height: 200px;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 3px black;
+  text-align: center;
+  line-height: 200px;
+  font-size: large;
+  font-weight: 500px;
+  font-family : Verdana;
+}
+
+footer{
+  background: #F6F7F7;
+  padding: 40px 0;
+}
+
+footer :after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+footer > div{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer > div :first-child{
+  float: right;
+}
+
+footer img{
+  width: 40px;
+  margin-left: 10px;
+}
+
+footer > div :last-child{
+  line-height: 2.6rem;
+  float: left;
+}
+
+.paginate {
+    position: relative;
+    min-height: 30px;
+    margin-top: 17px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-    <h1>Weekly Game Ranking</h1>
-        </header>
-
-
-        <div class="wrapper">
-            <div class="date"> 
-                <input type="month" name="month">
-                ~
-                <input type="month" name="month">
-            </div>
-            <div class="search"> <input type="text"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th>PC Room Rate</th>
-                        <th>Change</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="rank">1</td>
-                        <td class="Language">League Of Legend</td>
-                        <td class="Rating">47.81 %</td>
-                        <td class="Change">+3</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">2</td>
-                        <td class="Language">Sudden Attack</td>
-                        <td class="Rating">8.80 %</td>
-                        <td class="Change">+1</td>
-                    </tr>
-                        <tr>
-                        <td class="rank">3</td>
-                        <td class="Language">Battle Ground</td>
-                        <td class="Rating">8.08 %</td>
-                        <td class="Change">-1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">4</td>
-                        <td class="Language">FIFA Online 4</td>
-                        <td class="Rating">4.70 %</td>
-                        <td class="Change">0</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">5</td>
-                        <td class="Language">Over Watch</td>
-                        <td class="Rating">4.61 %</td>
-                        <td class="Change">0</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">6</td>
-                        <td class="Language">LOSTARK</td>
-                        <td class="Rating">3.19 %</td>
-                        <td class="Change">0</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">7</td>
-                        <td class="Language">StarCraft</td>
-                        <td class="Rating">2.88 %</td>
-                        <td class="Change">0</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">8</td>
-                        <td class="Language">AION</td>
-                        <td class="Rating">2.37 %</td>
-                        <td class="Change">0</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">9</td>
-                        <td class="Language">Maple Story</td>
-                        <td class="Rating">1.63 %</td>
-                        <td class="Change">-10</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">10</td>
-                        <td class="Language">Dungeon & Fighter</td>
-                        <td class="Rating">1.29 %</td>
-                        <td class="Change">-1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">11</td>
-                        <td class="Language">KART RIDER</td>
-                        <td class="Rating">1.11%</td>
-                        <td class="Change">+3</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">12</td>
-                        <td class="Language">MINECRAFT</td>
-                        <td class="Rating">1.01%</td>
-                        <td class="Change">+9</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">13</td>
-                        <td class="Language">LINEAGE</td>
-                        <td class="Rating">1.00%</td>
-                        <td class="Change">+7</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">14</td>
-                        <td class="Language">COOKIE RUN</td>
-                        <td class="Rating">0.95%</td>
-                        <td class="Change">-4</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">15</td>
-                        <td class="Language">AMONG US</td>
-                        <td class="Rating">0.92%</td>
-                        <td class="Change">-4</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">16</td>
-                        <td class="Language">Crazy Arcade</td>
-                        <td class="Rating">0.87%</td>
-                        <td class="Change">-1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">17</td>
-                        <td class="Language">Getamped</td>
-                        <td class="Rating">0.86%</td>
-                        <td class="Change">+1</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">18</td>
-                        <td class="Language">Dioblo3</td>
-                        <td class="Rating">0.85%</td>
-                        <td class="Change">-5</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">19</td>
-                        <td class="Language">ELSWORD</td>
-                        <td class="Rating">0.84%</td>
-                        <td class="Change">-7</td>
-                    </tr>
-                    <tr>
-                        <td class="rank">20</td>
-                        <td class="Language">Pokémon GO</td>
-                        <td class="Rating">0.82%</td>
-                        <td class="Change">+12</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+  
+  <main>
+    <div>
+      <a href="#"><h1>PROGRAMMER<br>&nbsp;&nbsp;ASSISTANT</h1></a>
     </div>
+  </main>
+
+
+
+   <header>
+    <div>
+      <a href="#">FRONT-END</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+
+  <article>
+  <div>
+    <section>
+      <a href ="#"><div class="one" style="background-color: rgb(167, 51, 51);" >HTML</div></a>
+            
+            
+<p>It is a type of web language used to create documents that can be viewed through the World Wide Web, one of the Internet services. It was developed specifically to create hypertext, and most web pages accessed over the web from the Internet are written in HTML.</p>      
+    </section>
+
+        <section>
+          <a href ="#"><div class="one" style="background-color: rgb(93, 115, 184);">CSS</div></a>
+            
+<p>Existing HTML has many restrictions on designing and changing web documents from time to time, and it is the style sheet that was created to compensate for this, and the standard version of the style sheet is the CSS. It is also called a style sheet.</p>       </pre>
+      
+    </section>
+        <section>
+          <a href ="#"><div class="one" style="background-color: rgb(190, 190, 84);">Javascript</div></a>
+            
+            
+      <p>JavaScript is a cross-platform, object-oriented scripting language that is responsible for the behavior of web pages. For example, using JavaScript, you can issue commands such as 'Click the button and show the date below'.</p>
+  
+    </section>
+
+	<section>
+		<a href ="#"><div class="one" style="background-color: rgb(196, 89, 160);">Framework</div></a>
+		  
+		  
+<p>To facilitate the development of a software application or solution, a software environment in which the design and implementation of specific features of the software is provided in a collaborative form for reuse.</p>	
+  </section>
+
+  <section>
+    <a href ="#"><div class="one" style="background-color: rgb(161, 245, 217);">SASS</div></a>
+	  
+	  
+<p>Sass is a style sheet language designed by Hampton Katlin and developed by Natalie Weichenbaum. After the initial versions, Weichenbaum and Chris Epstein continued to expand Sass to SassScript, a simple scripting language used in Sass files.</p>
+</section>
+<section>
+	<a href ="#"><div class="one" style="background-color:rgb(211, 175, 107);">TypeScript</div></a>
+	  
+	  
+<p> JavaScript-based programs such as AngularJS, ReactJS, Node.js, and others are also typescript programs.</p>
+</section>
+
+  </article>
+
+
+
+  <div class="paginate">
+    <div class="page_wrap">
+      
+<a href="#"><em class="num_page">1</em></a>
+<a href="#"><em class="num_page">2</em></a>
+<a href="#"><em class="num_page">3</em></a>
+<a href="#"><em class="num_page">4</em></a>
+<a href="#"><em class="num_page">5</em></a>
+
+</div>
+  </div>
+
+
+
+
+
+     <footer>
+<div>
+        <div>
+            <a href="#" alt="facebook"><img src="http://www.myiconfinder.com/uploads/iconsets/48-48-005d32df4586811e01333ee881146c40.png"></a>
+            <a href="#" alt="twitter"><img src="http://www.myiconfinder.com/uploads/iconsets/48-48-624dc72b6deef6abddf29031c1ac7224.png"></a>
+        </div>
+        <div>
+            Hannam university
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>
