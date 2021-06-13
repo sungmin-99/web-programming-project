@@ -6,70 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Rankings</title>
     <style>
-    body {
-        font-family: 'Lato', Arial, sans-serif;
-        color: #989c9b;
-    }
+        body {
+            font-family: 'Lato', Arial, sans-serif;
+            color: #989c9b;
+        }
 
-    .container > header {
-        margin: 0 auto;
-        padding: 1em;
-        text-align: center;
-    }
+        .container > header {
+            margin: 0 auto;
+            padding: 1em;
+            text-align: center;
+        }
 
-    .container > header h1 {
-    font-weight: 600;
-        font-size: 3em;
-        margin: 0;
-    }
+        .container > header h1 {
+        font-weight: 600;
+            font-size: 3em;
+            margin: 0;
+        }
 
-    .wrapper {
-        line-height: 1.5em;
-        margin: 0 auto;
-        padding: 2em 0 3em;
-        width: 90%;
-        max-width: 2000px;
-        overflow: hidden;
-    }
+        .wrapper {
+            line-height: 1.5em;
+            margin: 0 auto;
+            padding: 2em 0 3em;
+            width: 90%;
+            max-width: 2000px;
+            overflow: hidden;
+        }
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        background: #fff;
-    }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: #fff;
+        }
 
-    th {
-        background-color: #326295;
-        font-weight: bold;
-        color: #fff;
-        white-space: nowrap;
-    }
+        th {
+            background-color: #326295;
+            font-weight: bold;
+            color: #fff;
+            white-space: nowrap;
+        }
 
-    td, th {
-        padding: 1em 1.5em;
-        text-align: left;
-    }
+        td, th {
+            padding: 1em 1.5em;
+            text-align: left;
+        }
 
-    tbody th {
-        background-color: #2ea879;
-    }
-    tbody tr:nth-child(2n-1) {
-        background-color: #f5f5f5;
-        transition: all .125s ease-in-out;
-    }
-    tbody tr:hover {
-        background-color: rgba(50,98,149,.3);
-    }
+        tbody th {
+            background-color: #2ea879;
+        }
+        tbody tr:nth-child(2n-1) {
+            background-color: #f5f5f5;
+            transition: all .125s ease-in-out;
+        }
+        tbody tr:hover {
+            background-color: rgba(50,98,149,.3);
+        }
 
-    td.rank {
-        text-transform: capitalize;
-    }
+        td.rank {
+            text-transform: capitalize;
+        }
+        .button {
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 2px;
+            font-size: 20px;
+            padding: 20px;
+            position: absolute;
+            right: 25px;
+            margin: 25px 0 25px;
+            box-shadow: -1px 1px 5px -1px rgba(0,0,0,0.68);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-    <h1>Programming Language Ranking Top 20</h1>
+            <a href = '../index.html'><div class="button"> main </div></a>
+            <h1>Programming Language Ranking Top 20</h1>
         </header>
         <div class="wrapper">
             <table>

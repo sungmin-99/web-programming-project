@@ -7,202 +7,200 @@
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
       @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 0px solid silver;
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 0px solid silver;
-}
+    img{
+      width: 100px;
+    }
 
-img{
-  width: 100px;
-}
+    body{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 13px;
+      color: #999;
+      line-height: 1rem;
+      letter-spacing: 0.1px;
+    }
 
-body{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 13px;
-  color: #999;
-  line-height: 1rem;
-  letter-spacing: 0.1px;
-}
+    h1 {
+    font-size: 4rem;
+      text-transform: uppercase;
+      line-height: 4rem;
+    }
 
-h1 {
-font-size: 4rem;
-  text-transform: uppercase;
-  line-height: 4rem;
-}
+    h2 {
+    font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #222;
+    }
 
-h2 {
-font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #222;
-}
+    h3 {
+    font-size: 1rem;
+      line-height: 3rem;
+      text-transform: uppercase;
+      color: #222;
+    }
 
-h3 {
-font-size: 1rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  color: #222;
-}
+    h4 {
+      font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
 
-h4 {
-  font-family: 'Playfair Display', serif;
-font-size: 1.1rem;
-  line-height: 1.4rem;
-}
+    h5 {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.8rem;
+      line-height: 2rem;
+      margin-bottom:25px;
+    }
 
-h5 {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.8rem;
-  line-height: 2rem;
-  margin-bottom:25px;
-}
+    p{
+      margin-bottom: 20px;
+    }
 
-p{
-  margin-bottom: 20px;
-}
+    small{
+      line-height: 2rem;
+    }
 
-small{
-  line-height: 2rem;
-}
+    a:link { color: #666; text-decoration: none;}
+    a:visited { color: #666; }
+    a:hover { color: black; }
+    a:active { color: red; }
 
-a:link { color: #666; text-decoration: none;}
-a:visited { color: #666; }
-a:hover { color: black; }
-a:active { color: red; }
+    button{
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+    }
 
-button{
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  background: white;
-  cursor: pointer;
-}
+    button:hover{
+      color: white;
+      background: #666;
+    }
 
-button:hover{
-  color: white;
-  background: #666;
-}
+    /*start*/
+    main{
+      height: 600px;
+      background: url('img/main.png') no-repeat;
+    background-size: cover;
+      position: relative;
+    }
 
-/*start*/
-main{
-  height: 600px;
-  background: url('https://images.unsplash.com/photo-1584291527908-033f4d6542c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80') no-repeat;
-background-size: cover;
-  position: relative;
-}
+    main div{
+      position: absolute;
+      width: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 3rem;
+      text-align: center;
+      color: white;
+    }
 
-main div{
-  position: absolute;
-  width: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 3rem;
-  text-align: center;
-  color: white;
-}
+    main div h1, main div h4,main div h5{
+      color: white;
+    }
 
-main div h1, main div h4,main div h5{
-  color: white;
-}
+    header{
+      width: 1000px;
+      margin: 0 auto;
+      border-bottom: 1px solid silver;
+    }
 
-header{
-  width: 1000px;
-  margin: 0 auto;
-  border-bottom: 1px solid silver;
-}
+    header:after{
+      content:"";
+      display:block;
+      clear:both;
+    }
 
-header:after{
-  content:"";
-  display:block;
-  clear:both;
-}
+    header > :first-child{
+      float: left;
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 5rem;
+    }
 
-header > :first-child{
-  float: left;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 5rem;
-}
+    header nav{
+      float:right;
+    }
 
-header nav{
-  float:right;
-}
+    header nav ul li{
+      list-style: none;
+      display: inline;
+      font-size: 0.9rem;
+      padding: 0 10px;
+      text-transform: uppercase;
+      line-height: 5rem;
+    }
 
-header nav ul li{
-  list-style: none;
-  display: inline;
-  font-size: 0.9rem;
-  padding: 0 10px;
-  text-transform: uppercase;
-  line-height: 5rem;
-}
+    article{
+      padding: 50px 0;
+      clear: both;
+      text-align: center;
+    }
 
-article{
-  padding: 50px 0;
-  clear: both;
-  text-align: center;
-}
+    article > div{
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
 
-article > div{
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+    article section{
+      width: 310px;
+      float: left;
+    }
 
-article section{
-  width: 310px;
-  float: left;
-}
+    article img{
+      width: 310px;
+      height: 200px;
+    }
 
-article img{
-  width: 310px;
-  height: 200px;
-}
+    footer{
+      background: #F6F7F7;
+      padding: 40px 0;
+    }
 
-footer{
-  background: #F6F7F7;
-  padding: 40px 0;
-}
+    footer :after{
+      content:"";
+      display:block;
+      clear:both;
+    }
 
-footer :after{
-  content:"";
-  display:block;
-  clear:both;
-}
+    footer > div{
+      width: 1000px;
+      margin: 0 auto;
+    }
 
-footer > div{
-  width: 1000px;
-  margin: 0 auto;
-}
+    footer > div :first-child{
+      float: right;
+    }
 
-footer > div :first-child{
-  float: right;
-}
+    footer img{
+      width: 40px;
+      margin-left: 10px;
+    }
 
-footer img{
-  width: 40px;
-  margin-left: 10px;
-}
-
-footer > div :last-child{
-  line-height: 2.6rem;
-  float: left;
-}
-
-</style>
+    footer > div :last-child{
+      line-height: 2.6rem;
+      float: left;
+    }
+  </style>
 </head>
 <body>
   <main>
     <div>
-      <h4>Where can I get some?</h4>
-      <h1>TOP RANK</h1>
-      <h5>Don't look even slightly believable. If you are going to use a passage</h5>
+      <h4>Do you want to be a programmer?</h4>
+      <h1>PROGRAMMER<br>ASSISTANT</h1>
+      <h5>You can see the work process and open source.</h5>
       <a href = 'https://github.com/sungmin-99/web-programming-project/'><button>Read more</button></a>
     </div>
   </main>
