@@ -142,6 +142,17 @@
       line-height: 5rem;
     }
 
+    .banner{
+        border: solid 5px black;
+        width: 175px;
+        height: 300px;
+        margin-right: 100px;
+        float: left;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: black;
+    }
+
     article{
       padding: 50px 0;
       clear: both;
@@ -149,15 +160,16 @@
     }
 
     article > div{
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+      width: 1400px;
+      margin-left: 3.2%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
 
     article section{
-      width: 310px;
+      width: 295px;
       float: left;
       margin-bottom: 20px;
     }
@@ -202,6 +214,7 @@
 
   </style>
 </head>
+
 <body>
   <main>
     <div>
@@ -212,10 +225,11 @@
     </div>
   </main>
 
-   <header>
+  <header>
     <div>
       <a href="#">Programmer Guide</a>
     </div>
+  
     <nav>
       <ul>
         <li><a href="#">About</a></li>
@@ -227,69 +241,80 @@
   </header>
 
   <article>
-  <div>
-    <section>
-      <img src="img/language.png">
-            <h3>PROGRAMMING LANGUAGE</h3>
-            <small>~year 2020</small>
-      <p>코딩을 배우고 싶어하는 사람들은 언제나 어떤 언어를 배울까 고민합니다. TIOBE에서 Google, Bing, Yahoo!, Wikipedia, Amazon, Youtube등 세계적으로 유명한 검색엔진은 기반으로 통계한 프로그래밍 언어의 순위를 확인해 보세요!</p>
-      <a href='Langauge Ranking/programming language.html'><button>Read more</button></a>
-    </section>
-        <section>
-<img src="img/fe2.jpg">
-          <h3>Front-End</h3>
-          <small>2021.06.01 ~ 2021.06.30</small>
-      <p>프로그래머가 되고싶은데 무엇부터 시작해야 할지 모르겠다면 클릭해주세요! 저희 PROGRAMMER ASSISTANT는 프론트엔드 개발자에 대해서 소개하고 수업을 진행합니다! 이 수업을 듣고 세계적인 프론트엔드 개발자가 되어보세요!
-      </p>
-       
-      <a href = 'front-end/front-end.html'><button>Read more</button></a>
-    </section>
-        <section>
-          <img src="img/enterprise.png">
-            <h3>Enterprise</h3>
-            <small>~2021.06.01</small>
-      <p>우리들은 언제나 좋은 환경, 좋은 동료, 좋은 기업의 성장성등 조금이라도 더 나은 기업에 취업하고 싶어합니다. 삼성, 네이버, 카카오, 현대, SK와 국내뿐 아닌 해외 기업인 Google, Amazon, Apple, Facebook, MS등등 기업들의 선호도를 보고 싶다면 여기로 들어와보세요!!</p>
-      <a href="Enterprise Ranking/Enterprise.html"><button>Read more</button></a>
-    </section>
+      <div>
+          <aside class='banner'>
+            <br><br><br><br><br><br><br><br>광고문의
+          </aside>
 
-    <section>
-      <img src="img/open-source2.png">
-        <h3>OPEN SOURCE CODE</h3>
-        <small>Free</small>
-  <p>무슨 코드를 써야할지 모르겠다면 여기로 접속하세요!!! 
-    <br>이곳은 전세계 개발자들의 코드를  사용할 수 있습니다. 또 자신의 코드를 공유하여 다른 개발자에게 도움이 될 수도 있습니다!!!</p>
-  <a href="#"><button>Read more</button></a>
-</section>
+          <section>
+              <img src="img/language.png">
+              <h3>PROGRAMMING LANGUAGE</h3>
+              <small>~year 2020</small>
+              <p>코딩을 배우고 싶어하는 사람들은 언제나 어떤 언어를 배울까 고민합니다. TIOBE에서 Google, Bing, Yahoo!, Wikipedia, Amazon, Youtube등 세계적으로 유명한 검색엔진은 기반으로 통계한 프로그래밍 언어의 순위를 확인해 보세요!</p>
+              <a href='Langauge Ranking/programming language.html'><button>Read more</button></a>
+          </section>
+    
+          <section>
+              <img src="img/fe2.jpg">
+              <h3>Front-End</h3>
+              <small>2021.06.01 ~ 2021.06.30</small>
+              <p>프로그래머가 되고싶은데 무엇부터 시작해야 할지 모르겠다면 클릭해주세요! 저희 PROGRAMMER ASSISTANT는 프론트엔드 개발자에 대해서 소개하고 수업을 진행합니다! 이 수업을 듣고 세계적인 프론트엔드 개발자가 되어보세요!
+              </p>
+              <a href = 'front-end/front-end.html'><button>Read more</button></a>
+          </section>
+         
+          <section>
+              <img src="img/enterprise.png">
+              <h3>Enterprise</h3>
+              <small>~2021.06.01</small>
+              <p>우리들은 언제나 좋은 환경, 좋은 동료, 좋은 기업의 성장성등 조금이라도 더 나은 기업에 취업하고 싶어합니다. 삼성, 네이버, 카카오, 현대, SK와 국내뿐 아닌 해외 기업인 Google, Amazon, Apple, Facebook, MS등등 기업들의 선호도를 보고 싶다면 여기로 들어와보세요!!</p>
+              <a href="Enterprise Ranking/Enterprise.html"><button>Read more</button></a>
+          </section>
+          
+          <aside class='banner'>
+            <br><br><br><br><br><br><br><br>광고문의
+          </aside>
 
-<section>
-  <img src="img/back-end.jpg">
-    <h3>BACK-END</h3>
-    <small>~2021.06.01</small>
-<p>백엔드</p>
-    <a href="#"><button>Read more</button></a>
-</section>
+          <section>
+              <img src="img/open-source2.png">
+              <h3>OPEN SOURCE CODE</h3>
+              <small>Free</small>
+              <p>무슨 코드를 써야할지 모르겠다면 여기로 접속하세요!!! 
+                  <br>이곳은 전세계 개발자들의 코드를  사용할 수 있습니다. 또 자신의 코드를 공유하여 다른 개발자에게 도움이 될 수도 있습니다!!!</p>
+            <a href="#"><button>Read more</button></a>
+          </section>
+          
+          <section>
+              <img src="img/back-end.jpg">
+              <h3>BACK-END</h3>
+              <small>~2021.06.01</small>
+              <p>백엔드</p>
+              <a href="#"><button>Read more</button></a>
+          </section>
+          
+          <section>
+              <img src="img/mobile.jpg">
+              <h3>Mobile</h3>
+              <small>~2021.06.01</small>
+              <p>모바일</p>
+              <a href="#"><button>Read more</button></a>
+          </section>
 
-<section>
-  <img src="img/mobile.jpg">
-    <h3>Mobile</h3>
-    <small>~2021.06.01</small>
-<p>모바일</p>
-    <a href="#"><button>Read more</button></a>
-</section>
-
+        </div>
   </article>
 
 
-     <footer>
-<div>
-        <div>
+  <footer>
+      <div>
+          <div>
             <a href="#" alt="facebook"><img src="img/facebook.png"></a>
             <a href="#" alt="twitter"><img src="img/twiter.png"></a>
-        </div>
-        <div>
-            Hannam university
-        </div>
+          </div>
+          <div>
+              Hannam university
+          </div>
       </div>
-    </footer>
+  </footer>
+
 </body>
 </html>
